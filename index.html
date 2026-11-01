@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maheen Arshad | Computer Engineer & Designer</title>
+  <meta name="description" content="Portfolio of Maheen Arshad - Computer Engineering student, developer, and graphic & UI/UX designer." />
+  <meta name="theme-color" content="#09090B" />
+
+  <!-- Fonts: Inter (body) + Space Grotesk (headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Maheen<span>.</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#design">Design</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Welcome to my portfolio</p>
+          <h1>Hi, I'm <span class="gradient-text">Maheen Arshad.</span></h1>
+          <h2 class="hero-title">Computer Engineering Student | Developer | Graphic &amp; UI/UX Designer</h2>
+          <p class="hero-intro">
+            I build things at the meeting point of hardware, software, and design,
+            from IoT systems and full-stack apps to clean, user-focused interfaces and brand identities.
+          </p>
+          <div class="btn-row">
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <div class="photo-wrap">
+            <span class="ring ring-1"></span>
+            <span class="ring ring-2"></span>
+
+            <div class="photo-frame glass">
+              <!-- TODO: Replace the whole div below with your photo:
+                   <img src="assets/profile.jpg" alt="Maheen Arshad" width="400" height="400" /> -->
+              <div class="photo-placeholder">
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle cx="60" cy="44" r="22" />
+                  <path d="M16 118c0-26 20-44 44-44s44 18 44 44z" />
+                </svg>
+              </div>
+            </div>
+
+            <span class="float-chip chip-a">&lt;/&gt; Developer</span>
+            <span class="float-chip chip-b">&#127912; Designer</span>
+            <span class="float-chip chip-c">&#9881; Engineer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. ABOUT ============ -->
+    <section class="section alt" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="eyebrow">About me</p>
+          <h2 class="section-title">Engineer by training, designer at heart.</h2>
+        </div>
+        <div class="reveal">
+          <p>
+            I'm a Computer Engineering student at IIUI with strong skills in both hardware and software,
+            including programming, system design, and digital electronics. I've gained hands-on experience
+            through academic projects in AI/IoT, full-stack systems, and embedded platforms.
+          </p>
+          <p>
+            Alongside engineering, I work as a freelance graphic designer and UI/UX designer, and I develop
+            Android and Flutter apps. I'm passionate about building efficient, user-focused solutions across
+            computer systems, embedded systems, and software development.
+          </p>
+          <!-- TODO: Add 1-2 sentences in your own voice about what motivates you. -->
+          <!-- TODO: Put your CV at assets/Maheen-Arshad-CV.pdf -->
+          <a href="assets/Maheen-Arshad-CV.pdf" class="btn btn-primary" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section-title">What I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass reveal">
+            <div class="icon">&lt;/&gt;</div>
+            <h3>Programming Languages</h3>
+            <ul class="chips"><li>Python</li><li>C++</li></ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="icon">&#127760;</div>
+            <h3>Web Development</h3>
+            <ul class="chips"><li>Web Development</li><li>MySQL / Databases</li><li>Streamlit</li></ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="icon">&#129504;</div>
+            <h3>AI &amp; IoT</h3>
+            <ul class="chips"><li>Machine Learning</li><li>ESP32</li><li>LoRa</li><li>Weather API Integration</li></ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="icon">&#9881;</div>
+            <h3>Embedded Systems</h3>
+            <ul class="chips"><li>Embedded Systems</li><li>ESP32</li><li>Raspberry Pi</li></ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="icon">&#128241;</div>
+            <h3>Mobile Development</h3>
+            <ul class="chips"><li>Android Studio</li><li>Flutter</li></ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="icon">&#127912;</div>
+            <h3>Graphic Design</h3>
+            <ul class="chips"><li>Logo Design</li><li>Branding</li><li>Visual Identity</li></ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="icon">&#9998;</div>
+            <h3>UI/UX Design</h3>
+            <ul class="chips"><li>Wireframes</li><li>Interactive Prototypes</li><li>Design Systems</li></ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="icon">&#128295;</div>
+            <h3>Design &amp; Tools</h3>
+            <ul class="chips"><li>Figma</li><li>3D Modeling</li><li>MATLAB</li><li>Rocky Linux</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. PROJECTS ============ -->
+    <section class="section alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section-title">Selected work</h2>
+        </div>
+
+        <div class="filters reveal" id="projectFilters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="aiot">AI &amp; IoT</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="mobile">Mobile</button>
+          <button class="filter" data-filter="embedded">Embedded</button>
+          <button class="filter" data-filter="uiux">UI/UX &amp; Figma</button>
+          <button class="filter" data-filter="graphic">Graphic Design</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Real project from CV -->
+          <article class="project-card reveal" data-category="aiot embedded">
+            <img class="project-img" src="assets/projects/iot.svg" alt="AI IoT flood monitoring illustration" width="640" height="380" loading="lazy" />
+            <div class="project-body">
+              <h3>AI-Enhanced IoT Flood Monitoring System</h3>
+              <p>ESP32 + LoRa for real-time sensor data collection and weather API integration, delivering flood predictions with a 2-4 day early warning system.</p>
+              <ul class="tags"><li>ESP32</li><li>LoRa</li><li>Weather API</li></ul>
+              <!-- TODO: replace # with your repo link -->
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+
+          <!-- Real project from CV -->
+          <article class="project-card reveal" data-category="web">
+            <img class="project-img" src="assets/projects/dashboard.svg" alt="Inventory analytics dashboard illustration" width="640" height="380" loading="lazy" />
+            <div class="project-body">
+              <h3>SIFAS: Smart Inventory Forecasting &amp; Analytics System</h3>
+              <p>Full-stack solution with 3-month moving average demand forecasting, interactive dashboards, and automated stock alerts.</p>
+              <ul class="tags"><li>Python</li><li>MySQL</li><li>Streamlit</li></ul>
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+
+          <!-- Real project from CV -->
+          <article class="project-card reveal" data-category="web">
+            <img class="project-img" src="assets/projects/docs.svg" alt="System documentation illustration" width="640" height="380" loading="lazy" />
+            <div class="project-body">
+              <h3>osTicket LAMP System Documentation</h3>
+              <p>Administrator and user manuals, automation workflows, and deployment guides created for long-term clarity and support.</p>
+              <ul class="tags"><li>LAMP</li><li>Rocky Linux</li><li>Documentation</li></ul>
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+
+          <!-- Real project from CV -->
+          <article class="project-card reveal" data-category="mobile uiux">
+            <img class="project-img" src="assets/projects/mobile.svg" alt="Mobile app and UI design illustration" width="640" height="380" loading="lazy" />
+            <div class="project-body">
+              <h3>UI/UX &amp; Mobile Application Suite</h3>
+              <p>Figma interfaces and responsive Android Studio apps focused on usability and performance.</p>
+              <ul class="tags"><li>Figma</li><li>Android Studio</li><li>Flutter</li></ul>
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDERS: edit or delete -->
+          <article class="project-card reveal" data-category="embedded">
+            <img class="project-img" src="assets/projects/circuit.svg" alt="Embedded circuit board illustration" width="640" height="380" loading="lazy" />
+            <div class="project-body">
+              <h3>Embedded Project Title <em class="ph">(placeholder)</em></h3>
+              <p>Replace with a short description of your embedded systems project (Raspberry Pi, ESP32, etc.).</p>
+              <ul class="tags"><li>Tech 1</li><li>Tech 2</li></ul>
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="graphic">
+            <img class="project-img" src="assets/projects/graphic.svg" alt="Graphic design shapes illustration" width="640" height="380" loading="lazy" />
+            <div class="project-body">
+              <h3>Poster / Branding Project <em class="ph">(placeholder)</em></h3>
+              <p>Replace with a short description of a design project, such as a brand identity or poster series.</p>
+              <ul class="tags"><li>Branding</li><li>Logo Design</li></ul>
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">View Project</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. UI/UX & GRAPHIC DESIGN GALLERY ============ -->
+    <section class="section" id="design">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Creative work</p>
+          <h2 class="section-title">UI/UX &amp; Graphic Design</h2>
+          <p class="section-sub">A selection of poster, branding, social media, web and app design work.</p>
+        </div>
+
+        <div class="gallery">
+          <!-- To use a real image: replace the <div class="gallery-img ..."> with
+               <img src="assets/design/poster-1.jpg" alt="Poster design" loading="lazy" /> -->
+          <figure class="gallery-item reveal"><img src="assets/design/poster-design.jpg" alt="Poster designs: Design Week and Neon Nights" width="960" height="720" loading="lazy" /><figcaption>Poster Designs</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/design/logo-design.jpg" alt="Brand identity and logo design" width="960" height="720" loading="lazy" /><figcaption>Branding &amp; Logo Designs</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/design/social-media-design.jpg" alt="Social media post designs" width="960" height="720" loading="lazy" /><figcaption>Social Media Designs</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/design/website-ui.jpg" alt="Website UI design" width="960" height="720" loading="lazy" /><figcaption>Website UI Designs</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/design/mobile-prototype.jpg" alt="Mobile app prototype screens" width="960" height="720" loading="lazy" /><figcaption>Mobile App Prototypes</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/design/figma-project.jpg" alt="Figma project frames" width="960" height="720" loading="lazy" /><figcaption>Figma Projects</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. EDUCATION ============ -->
+    <section class="section alt" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Education</p>
+          <h2 class="section-title">Academic background</h2>
+        </div>
+
+        <div class="edu-card glass reveal">
+          <div class="edu-dot"></div>
+          <h3>BS Computer Engineering and Technology</h3>
+          <p class="edu-uni">International Islamic University, Islamabad (IIUI)</p>
+          <p class="edu-meta">2023 &ndash; 2027 &middot; Islamabad, Pakistan</p>
+          <!-- TODO: Optionally add CGPA, relevant coursework, or final-year project here. -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Let's build something great together.</h2>
+          <p>
+            Whether it's a project, an internship opportunity, or a design collaboration,
+            I'd love to hear from you. Thank you for visiting my portfolio.
+          </p>
+
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:Maheenarshad4002@gmail.com">Maheenarshad4002@gmail.com</a></li>
+            <li><span>LinkedIn</span><a href="https://linkedin.com/in/maheenarshad" target="_blank" rel="noopener">linkedin.com/in/maheenarshad</a></li>
+            <!-- TODO: replace YOUR-USERNAME with your GitHub username -->
+            <li><span>GitHub</span><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">github.com/YOUR-USERNAME</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form glass reveal" id="contactForm" novalidate>
+          <label>Name
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </label>
+          <label>Email
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>Message
+            <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 8. FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="logo">Maheen Arshad<span>.</span></p>
+      <div class="socials">
+        <a href="https://linkedin.com/in/maheenarshad" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:Maheenarshad4002@gmail.com">Email</a>
+      </div>
+      <p class="copy">&copy; <span id="year">2026</span> Maheen Arshad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
